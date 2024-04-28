@@ -1,0 +1,15 @@
+base_job_name: accelerate-sagemaker-1
+compute_environment: AMAZON_SAGEMAKER
+debug: false
+distributed_type: DATA_PARALLEL
+ec2_instance_type: ml.p3dn.24xlarge
+gpu_ids: all
+iam_role_name: arn:aws:iam::654654165917:role/iain-sagemaker
+mixed_precision: bf16
+num_machines: 1
+profile: iain-sagemaker
+py_version: py38
+pytorch_version: 1.10.2
+region: us-west-2
+transformers_version: 4.17.0
+use_cpu: false
